@@ -8,26 +8,33 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar className="navbar-primery my-2" light>
+      <Navbar className="navbar-cus my-2" light>
+      
         <NavbarToggler onClick={toggleNavbar}  />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
+         
             <NavItem>
-              <NavLink className="nav-link-cus" href="./."><i className="fa 	fa fa-home mx-3"></i>خانه</NavLink>
+              <NavLink className="nav-link-cus" href="./."><i className="fa 	fa fa-home mx-3"></i>ورود/عضویت</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link-cus" href="/profile"><i className="fa fa-user-circle mx-3"></i>پروفایل</NavLink>
+              <NavLink className="nav-link-cus" href="/profile"><i className="	fa fa-sitemap mx-3"></i>دسته بندی ها</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link-cus" href="/groups"><i className="	fas fa-comments mx-3"></i>گروه ها</NavLink>
+              <NavLink className="nav-link-cus" href="/groups"><i className="			fas fa-sign-language mx-3"></i>همکاری با ما</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink className="nav-link-cus" href="/groups"><i className="		fas fa-universal-access mx-3"></i>پشتیبانی</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link-cus" href="/groups"><i className="		fa fa-bullhorn mx-3"></i>ثبت شکایت</NavLink>
+            </NavItem>
+            
           </Nav>
+         
         </Collapse>
-        <NavbarBrand href="/" className="mx-auto">ویرایش پروفایل</NavbarBrand>
-        <button type="button" className="btn">
-  
-                  <i className="fa fa-arrow-left"></i>
-        </button>
+        <NavbarBrand href="/" className=" title">آدرس شما</NavbarBrand>
+        
       </Navbar>
     </div>
   );

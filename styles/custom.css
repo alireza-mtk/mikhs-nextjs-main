@@ -45,12 +45,30 @@ body {
     font-weight: 700;
     color: currentColor;
 }
+.navbar-nav {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: table-footer-group;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
 .nav-link-cus{
     float: right;
 }
-.navbar-primery{
-    background-color:#007bff;
+.title{
+    font-size: 13px;
+   
+    float: right    ;
+}
+.navbar-cus{
+    background-color:#c6d2df;
     border-radius: 1rem;
+    font-size: 13px;
 }
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
@@ -61,11 +79,7 @@ body {
 
 
 }
-.badge-cus {
-    font-size: 13px;
-    background-color: darkgreen;
-    float: left;
-}
+
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
    
@@ -77,9 +91,9 @@ body {
 }
 .btn-footer{
 
-    color: white;
-    background-color: #007bff;
-    font-size: 26px;
+    background-color:#c6d2df;
+    color: rgb(12, 4, 4);
+    font-size: 17px;
 }
 label {
     display: inline-block;
